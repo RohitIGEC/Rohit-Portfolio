@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rohit Chakravarti — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <div class="nav-logo">Rohit Chakravarti</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+        <div class="theme-toggle-thumb" id="themeIcon">🌙</div>
+      </button>
+    </li>
+  </ul>
+</nav>
+
+<!-- ===== HERO / HOME ===== -->
+<section id="home">
+  <p class="hero-greeting">Hey there 👋 Welcome to my corner of the internet</p>
+  <h1 class="hero-name">
+    <span class="line1">I'm Rohit</span>
+    <span class="line2">Chakravarti</span>
+  </h1>
+  <p class="hero-bio">
+    <strong>IT Support Engineer · Embedded Systems Developer · Web Developer</strong><br>
+    B.Tech ECE graduate from Sagar, MP. I spent a year working at the Ministry of Defence, Jabalpur —
+    managing networks, troubleshooting systems, and keeping defence-grade IT running without hiccups.
+    I love building things that actually work.
+  </p>
+
+  <!-- Quick info chips -->
+  <div class="hero-meta-row">
+    <span class="hero-chip"><span class="dot"></span> B.Tech ECE — IGEC Sagar, MP</span>
+    <span class="hero-chip">📍 Jabalpur, MP</span>
+    <span class="hero-chip">💼 1 Year @ Ordnance Factory, MoD</span>
+  </div>
+
+  <!-- CTA Buttons -->
+  <div class="hero-btns">
+    <a href="#contact" class="btn-primary">✉ Get in Touch</a>
+    <a href="mailto:rohitchakravarti2002@gmail.com?subject=Resume%20Request&body=Hi%20Rohit%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20request%20a%20copy%20of%20your%20resume.%0A%0AThank%20you!" class="btn-outline">📄 Request Resume</a>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="hero-icons">
+    <a href="https://github.com/RohitIGEC" target="_blank" class="hero-icon-link" title="GitHub">🐙</a>
+    <a href="mailto:rohitchakravarti2002@gmail.com" class="hero-icon-link" title="Email">✉</a>
+    <a href="tel:+919302937743" class="hero-icon-link" title="Call">📞</a>
+    <a href="https://linkedin.com/" target="_blank" class="hero-icon-link" title="LinkedIn">💼</a>
+    <a href="https://www.codechef.com/" target="_blank" class="hero-icon-link" title="CodeChef">👨‍💻</a>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="reveal">
+    <div class="sec-label">Who I Am</div>
+    <div class="sec-divider"></div>
+    <h2 class="sec-title">About <span>Me</span></h2>
+  </div>
+
+  <!-- Short intro paragraph -->
+  <div class="about-top reveal">
+    <p>
+      I'm a B.Tech ECE graduate from Indira Gandhi Engineering College, Sagar, MP.
+      After college, I joined Ordnance Factory Jabalpur (Ministry of Defence) as a Graduate Apprentice —
+      where I handled everything from setting up LAN networks to resolving critical IT issues on the field.
+      It taught me how to stay calm under pressure and get things done. Outside of work, I enjoy tinkering
+      with microcontrollers and building web projects from scratch.
+    </p>
+  </div>
+
+  <!-- What I Do cards -->
+  <div class="reveal">
+    <div class="sec-label" style="margin-bottom:.6rem;">What I Do</div>
+    <div class="what-i-do-grid">
+
+      <div class="wid-card">
+        <div class="wid-icon">🌐</div>
+        <div class="wid-title">Frontend Development</div>
+        <div class="wid-desc">Building clean, responsive web interfaces. I pay attention to the details — spacing, hover states, mobile layouts.</div>
+        <div class="wid-skills">
+          <span class="wid-tag">HTML5</span>
+          <span class="wid-tag">CSS3</span>
+          <span class="wid-tag">JavaScript</span>
+          <span class="wid-tag">Responsive Design</span>
+        </div>
+      </div>
+
+      <div class="wid-card">
+        <div class="wid-icon">⚙️</div>
+        <div class="wid-title">Backend & Scripting</div>
+        <div class="wid-desc">Server-side logic, automation scripts, and database management. I like writing code that does the heavy lifting quietly.</div>
+        <div class="wid-skills">
+          <span class="wid-tag">Python</span>
+          <span class="wid-tag">Java</span>
+          <span class="wid-tag">MySQL</span>
+          <span class="wid-tag">Git</span>
+        </div>
+      </div>
+
+      <div class="wid-card">
+        <div class="wid-icon">🤖</div>
+        <div class="wid-title">Embedded Systems</div>
+        <div class="wid-desc">Designing and programming microcontroller-based systems. There's something satisfying about hardware actually doing what you programmed.</div>
+        <div class="wid-skills">
+          <span class="wid-tag">Arduino</span>
+          <span class="wid-tag">Embedded C</span>
+          <span class="wid-tag">Sensors</span>
+          <span class="wid-tag">Circuit Design</span>
+        </div>
+      </div>
+
+      <div class="wid-card">
+        <div class="wid-icon">🔌</div>
+        <div class="wid-title">IT Support & Networking</div>
+        <div class="wid-desc">LAN setup, network troubleshooting, optical fiber, OS installs — done this in a real defence environment with zero tolerance for downtime.</div>
+        <div class="wid-skills">
+          <span class="wid-tag">LAN</span>
+          <span class="wid-tag">Optical Fiber</span>
+          <span class="wid-tag">CAT6</span>
+          <span class="wid-tag">Windows / Linux</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Currently Learning -->
+  <div class="learning-section reveal">
+    <div class="learning-label">Currently Learning</div>
+    <div class="learning-chips">
+      <span class="learning-chip">UI / UX Design</span>
+      <span class="learning-chip">Advanced Embedded Systems</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="reveal">
+    <div class="sec-label">Tech Stack</div>
+    <div class="sec-divider"></div>
+    <h2 class="sec-title">Technical <span>Skills</span></h2>
+  </div>
+
+  <div class="skills-grid reveal">
+
+    <div class="skill-card">
+      <div class="skill-card-title">Programming Languages</div>
+      <div class="skill-tags">
+        <span class="tag">Java ⭐⭐⭐⭐⭐</span>
+        <span class="tag">Python</span>
+        <span class="tag">C</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Embedded C</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-title">Frontend Development</div>
+      <div class="skill-tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Responsive Design</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-title">Backend & Database</div>
+      <div class="skill-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Java</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Linux Shell</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-title">Embedded Systems</div>
+      <div class="skill-tags">
+        <span class="tag">Arduino IDE</span>
+        <span class="tag">Embedded C</span>
+        <span class="tag">TMP36 Sensor</span>
+        <span class="tag">HC-SR04</span>
+        <span class="tag">IR Sensor</span>
+        <span class="tag">LCD Display</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-title">Networking & IT</div>
+      <div class="skill-tags">
+        <span class="tag">LAN Setup</span>
+        <span class="tag">Network Troubleshooting</span>
+        <span class="tag">Optical Fiber</span>
+        <span class="tag">CAT6</span>
+        <span class="tag">OS Installation</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-title">Tools & Platforms</div>
+      <div class="skill-tags">
+        <span class="tag">Git / GitHub</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">Tinkercad</span>
+        <span class="tag">MS Office</span>
+        <span class="tag">MySQL Workbench</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-title">Operating Systems</div>
+      <div class="skill-tags">
+        <span class="tag">Windows</span>
+        <span class="tag">Linux</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience">
+  <div class="reveal">
+    <div class="sec-label">Work History</div>
+    <div class="sec-divider"></div>
+    <h2 class="sec-title">Professional <span>Experience</span></h2>
+  </div>
+
+  <div class="exp-list reveal">
+
+    <!-- MoD Experience -->
+    <div class="exp-card">
+      <div class="exp-header">
+        <div class="exp-role">Graduate Apprentice Trainee</div>
+        <div class="exp-badges">
+          <span class="exp-type">Apprenticeship</span>
+          <span class="exp-date">Jan 2025 – Jan 2026</span>
+        </div>
+      </div>
+      <div class="exp-company">Ordnance Factory Jabalpur (Yantra India Limited) · Ministry of Defence, Govt. of India · Jabalpur, MP</div>
+
+      <div class="exp-dept">Information Technology Centre (ITC)</div>
+      <ul class="exp-points">
+        <li>Managed LAN setup, network troubleshooting, and optical fiber communication across 3+ departments.</li>
+        <li>Resolved 50+ hardware/software issues including Windows & Linux OS installation and on-site IT field support.</li>
+        <li>Supported conference and meeting setups ensuring smooth operations during official events.</li>
+        <li>Enforced defence-grade IT security protocols — zero security incidents over 12 months.</li>
+      </ul>
+
+      <div class="exp-dept">Quality Assurance (QA)</div>
+      <ul class="exp-points">
+        <li>Explored Spectro Machine operations for material composition testing and prepared detailed inspection reports.</li>
+        <li>Followed standard QA procedures and maintained accurate documentation for test records.</li>
+      </ul>
+
+      <div class="exp-dept">Plant & Maintenance (PM)</div>
+      <ul class="exp-points">
+        <li>Picked up Arduino IDE basics — component interfacing and embedded system fundamentals during maintenance support.</li>
+      </ul>
+    </div>
+
+    <!-- BHEL Internship -->
+    <div class="exp-card">
+      <div class="exp-header">
+        <div class="exp-role">Vocational Trainee</div>
+        <div class="exp-badges">
+          <span class="exp-type">Internship</span>
+          <span class="exp-date">May 2023 · 15 Days</span>
+        </div>
+      </div>
+      <div class="exp-company">Bharat Heavy Electricals Limited (BHEL) · Bhopal, MP</div>
+      <ul class="exp-points">
+        <li>Observed and documented industrial electronics workflows at one of India's largest PSUs.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Open to work box -->
+  <div class="opp-box reveal">
+    <div class="opp-dot"></div>
+    <div>
+      <div class="opp-text">🔍 Open to New Opportunities</div>
+      <div class="opp-sub">Looking for full-time roles in IT Support, IT Infrastructure, Embedded Systems, or Web Development. Remote, Hybrid, or On-site — I'm flexible. Happy to chat if you have something interesting.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="reveal">
+    <div class="sec-label">What I've Built</div>
+    <div class="sec-divider"></div>
+    <h2 class="sec-title">Featured <span>Projects</span></h2>
+  </div>
+
+  <div class="projects-grid reveal">
+
+    <div class="project-card">
+      <div class="proj-top">
+        <div class="proj-name">🛒 Amazon Clone</div>
+        <div class="proj-date">2023</div>
+      </div>
+      <div class="proj-about">A front-end replica of Amazon's UI — product listings, cart functionality, and a modular JS architecture. Built this to really understand how large e-commerce UIs are structured.</div>
+      <div class="proj-section-label">Key Features</div>
+      <ul class="proj-features">
+        <li>Product listing page with category navigation</li>
+        <li>Functional shopping cart with item management</li>
+        <li>Modular JavaScript architecture</li>
+        <li>Fully responsive across all screen sizes</li>
+      </ul>
+      <div class="proj-section-label">Technology Used</div>
+      <div class="proj-stack">
+        <span class="stack-badge">HTML5</span>
+        <span class="stack-badge">CSS3</span>
+        <span class="stack-badge">JavaScript</span>
+      </div>
+      <a href="https://github.com/RohitIGEC" target="_blank" class="btn-github">🐙 View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-top">
+        <div class="proj-name">🔐 Password Generator</div>
+        <div class="proj-date">2023</div>
+      </div>
+      <div class="proj-about">A secure, customizable password generator. Simple idea, but I focused on making the logic clean and the customization genuinely useful.</div>
+      <div class="proj-section-label">Key Features</div>
+      <ul class="proj-features">
+        <li>Supports 5+ character sets (upper, lower, numbers, symbols)</li>
+        <li>Password length configurable up to 128 characters</li>
+        <li>Clean CLI interface</li>
+      </ul>
+      <div class="proj-section-label">Technology Used</div>
+      <div class="proj-stack">
+        <span class="stack-badge">Python</span>
+      </div>
+      <a href="https://github.com/RohitIGEC" target="_blank" class="btn-github">🐙 View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-top">
+        <div class="proj-name">🤖 Human & Line Following Robot</div>
+        <div class="proj-date">2024 · Major Project</div>
+      </div>
+      <div class="proj-about">My final year major project — two autonomous robots built on Arduino. One follows a line, one follows a human. Achieved 95%+ accuracy in both. Probably the most fun I've had debugging anything.</div>
+      <div class="proj-section-label">Key Features</div>
+      <ul class="proj-features">
+        <li>95%+ tracking accuracy in both robots</li>
+        <li>IR sensor-based line detection</li>
+        <li>Ultrasonic sensor for human detection & obstacle avoidance</li>
+        <li>Real-time motor control logic</li>
+      </ul>
+      <div class="proj-section-label">Technology Used</div>
+      <div class="proj-stack">
+        <span class="stack-badge">Arduino</span>
+        <span class="stack-badge">Embedded C</span>
+        <span class="stack-badge">IR Sensor</span>
+        <span class="stack-badge">HC-SR04</span>
+      </div>
+      <a href="https://github.com/RohitIGEC" target="_blank" class="btn-github">🐙 View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-top">
+        <div class="proj-name">🌡️ Smart Temperature Monitor</div>
+        <div class="proj-date">2023</div>
+      </div>
+      <div class="proj-about">Real-time temperature monitoring with a TMP36 sensor and LCD display. Auto-triggers a WARNING above 30°C. Simulated on Tinkercad before building.</div>
+      <div class="proj-section-label">Key Features</div>
+      <ul class="proj-features">
+        <li>Real-time readings via TMP36 sensor</li>
+        <li>Live LCD display output</li>
+        <li>Automatic WARNING alert above 30°C</li>
+      </ul>
+      <div class="proj-section-label">Technology Used</div>
+      <div class="proj-stack">
+        <span class="stack-badge">Arduino</span>
+        <span class="stack-badge">Embedded C</span>
+        <span class="stack-badge">TMP36</span>
+        <span class="stack-badge">LCD Display</span>
+        <span class="stack-badge">Tinkercad</span>
+      </div>
+      <a href="https://github.com/RohitIGEC" target="_blank" class="btn-github">🐙 View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-top">
+        <div class="proj-name">🚗 Parking Sensor System</div>
+        <div class="proj-date">2023</div>
+      </div>
+      <div class="proj-about">Ultrasonic-based parking sensor that measures object distance and flashes an LED warning when something gets too close. Practical, clean, and actually useful.</div>
+      <div class="proj-section-label">Key Features</div>
+      <ul class="proj-features">
+        <li>Accurate distance measurement via HC-SR04</li>
+        <li>Automatic LED warning below 20cm</li>
+        <li>Simulated on Tinkercad for validation</li>
+      </ul>
+      <div class="proj-section-label">Technology Used</div>
+      <div class="proj-stack">
+        <span class="stack-badge">Arduino</span>
+        <span class="stack-badge">Embedded C</span>
+        <span class="stack-badge">HC-SR04</span>
+        <span class="stack-badge">Tinkercad</span>
+      </div>
+      <a href="https://github.com/RohitIGEC" target="_blank" class="btn-github">🐙 View on GitHub</a>
+    </div>
+
+  </div>
+
+  <div class="more-projects reveal">⚡ <span>More projects coming soon</span> — actively building!</div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education">
+  <div class="reveal">
+    <div class="sec-label">Academic Background</div>
+    <div class="sec-divider"></div>
+    <h2 class="sec-title">Education</h2>
+  </div>
+
+  <div class="edu-list reveal">
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <div class="edu-degree">B.Tech – Electronics & Communication Engineering</div>
+        <div class="edu-school">Indira Gandhi Engineering College, Sagar, MP</div>
+        <div class="edu-year">2020 – 2024 &nbsp;·&nbsp; CGPA: 6.85</div>
+      </div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-icon">🏫</div>
+      <div>
+        <div class="edu-degree">Class XII – MP Board</div>
+        <div class="edu-school">Saraswati H.S. School, Sihora, Jabalpur</div>
+        <div class="edu-year">2020</div>
+      </div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-icon">🏫</div>
+      <div>
+        <div class="edu-degree">Class X – MP Board</div>
+        <div class="edu-school">Saraswati H.S. School, Sihora, Jabalpur</div>
+        <div class="edu-year">2018</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certifications -->
+  <div class="cert-section reveal">
+    <div class="sec-label">Certifications & Achievements</div>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-name">Java – 5 Star Rating</div>
+        <div class="cert-issuer">HackerRank</div>
+        <div class="cert-date">Problem Solving & Java — Verified</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-name">Python Certification</div>
+        <div class="cert-issuer">HackerRank</div>
+        <div class="cert-date">Python Programming — Verified</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-name">Graduate Apprenticeship (1 Year)</div>
+        <div class="cert-issuer">Ordnance Factory Jabalpur — Ministry of Defence</div>
+        <div class="cert-date">Jan 2025 – Jan 2026</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-name">Vocational Training (15 Days)</div>
+        <div class="cert-issuer">BHEL, Bhopal</div>
+        <div class="cert-date">May 2023</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-name">Employability Skills</div>
+        <div class="cert-issuer">Dr. Reddy Foundation, Jabalpur</div>
+        <div class="cert-date">Professional Development</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-name">Time Management</div>
+        <div class="cert-issuer">Skillfy</div>
+        <div class="cert-date">Online Certification</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-name">300+ Problems Solved</div>
+        <div class="cert-issuer">CodeChef</div>
+        <div class="cert-date">DSA, Algorithms & Competitive Programming</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-name">Ranked 3rd — Essay Writing (Yoga Day)</div>
+        <div class="cert-issuer">Ordnance Factory Jabalpur</div>
+        <div class="cert-date">2025</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-name">Ranked 3rd — Essay Writing (Rajbhasha Pakhwada)</div>
+        <div class="cert-issuer">Ordnance Factory Jabalpur</div>
+        <div class="cert-date">2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="reveal">
+    <div class="sec-label">Let's Connect</div>
+    <div class="sec-divider"></div>
+    <h2 class="sec-title">Get in <span>Touch</span></h2>
+  </div>
+
+  <div class="contact-intro reveal">
+    <p>
+      I'm currently looking for <strong>full-time opportunities in IT and Electronics</strong> — IT Support, Embedded Systems, or Web Development.
+      If you're a <strong>recruiter</strong>, a <strong>fellow developer</strong>, or someone with an interesting idea — feel free to reach out.
+      I usually reply within a day.
+    </p>
+  </div>
+
+  <div class="contact-layout reveal">
+
+    <!-- LEFT col — links -->
+    <div class="lets-connect-col">
+      <h3>🔗 Reach Me At</h3>
+      <div class="contact-links">
+        <a href="mailto:rohitchakravarti2002@gmail.com" class="contact-link">
+          <div class="cl-icon">✉</div>rohitchakravarti2002@gmail.com
+        </a>
+        <a href="tel:+919302937743" class="contact-link">
+          <div class="cl-icon">📞</div>+91 9302937743
+        </a>
+        <a href="https://github.com/RohitIGEC" target="_blank" class="contact-link">
+          <div class="cl-icon">🐙</div>GitHub — RohitIGEC
+        </a>
+        <a href="https://linkedin.com/" target="_blank" class="contact-link">
+          <div class="cl-icon">💼</div>LinkedIn Profile
+        </a>
+        <a href="https://www.codechef.com/" target="_blank" class="contact-link">
+          <div class="cl-icon">👨‍💻</div>CodeChef Profile
+        </a>
+        <div class="contact-link" style="cursor:default;">
+          <div class="cl-icon">📍</div>Jabalpur, Madhya Pradesh, India
+        </div>
+      </div>
+
+      <!-- Available for work -->
+      <div class="avail-box">
+        <div class="avail-title"><div class="avail-dot"></div> Available for Opportunities</div>
+        <div class="avail-badges">
+          <span class="avail-badge">Remote</span>
+          <span class="avail-badge">Hybrid</span>
+          <span class="avail-badge">On-site</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT col — contact form -->
+    <div class="contact-form-box">
+      <h3>✉ Send a Message</h3>
+      <div class="form-group">
+        <label for="fname">Your Name</label>
+        <input type="text" placeholder="John Doe" id="fname"/>
+      </div>
+      <div class="form-group">
+        <label for="femail">Your Email</label>
+        <input type="email" placeholder="john@example.com" id="femail"/>
+      </div>
+      <div class="form-group">
+        <label for="fsubject">Subject</label>
+        <input type="text" placeholder="Job Opportunity / Collaboration" id="fsubject"/>
+      </div>
+      <div class="form-group">
+        <label for="fmessage">Message</label>
+        <textarea placeholder="Hi Rohit, I'd like to connect regarding..." id="fmessage"></textarea>
+      </div>
+      <button class="form-submit" onclick="sendMail()">🚀 Send Message</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 <span>Rohit Chakravarti</span>. Built from scratch with HTML, CSS & JS · Jabalpur, MP 🇮🇳</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
